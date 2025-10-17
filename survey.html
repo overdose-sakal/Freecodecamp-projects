@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>
+      Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://getwallpapers.com/wallpaper/full/c/7/b/861475-amazing-anime-background-1920x1080-for-pc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+header p {
+  color: white;
+  z-index: 200;
+}
+
+label,
+p {
+  color: white;
+}
+
+header{
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+
+#container {
+  background-color: #2f2b69B3;;
+  margin: auto;
+  width: 50%;
+  border: 3px solid darkblue;
+  padding: 10px;
+  z-index: 2;
+}
+
+#submit{
+  background-color: green;
+  color: white;
+  width: 100%;
+}
+
+#comment,
+#name,
+#number,
+#email {
+  width: 100%;
+}
+
+#comment {
+  height: 15vh;
+}
+    </style>
+  </head>
+
+  <body>
+     <header>
+    <h1 id="title">
+      Behemos Survey Form
+    </h1>
+    <p id="description">
+      Please help us by filling the survey form
+    </p>
+  </header>
+<div id="container">
+ 
+    <form id="survey-form">
+      <label id="name-label">Name</label><br>
+    <input id="name" type="text" value="name" placeholder="Enter your name" required><br>
+
+    <label id="email-label">Email</label><br>
+    <input type="email" id="email" value="email" placeholder="Enter your email" required><br>
+
+      <label id="number-label">Age</label><br>
+    <input type="number" value="number" id="number" placeholder="Enter your age" min="1"  max="150"><br>
+
+    <label>What is your current occupation?</label><br>
+    <select id="dropdown" reuired="">
+      <option disabled="" value="" selected="">Select occupation</option>
+      <option>Student</option>
+      <option>Self Employee</option>
+      <option>Employee</option>
+      <option>Businessman</option>
+      <br>
+    </select>
+
+    <p>Do you like our services?</p>
+   <label>
+      <input name="like" value="yes" type="radio">
+      Yes!
+    </label> 
+   <label>
+      <input name="like" value="no" type="radio">
+      No!
+    </label><br>
+
+    <label>What is do you like about us?</label><br>
+    <select reuired="">
+      <option disabled="" value="" selected="">Select an option</option>
+      <option>Service Cost</option>
+      <option>Cutomer Support</option>
+      <option>Delivery Speed</option>
+      <br>
+    </select><br>
+
+    <p>What should we improve?</p>
+    <label>
+      <input type="checkbox" value="customer-care">
+      Customer care
+    </label><br>
+
+    <label>
+      <input type="checkbox" value="speed">
+      Delivery speed
+    </label><br>
+
+    <label>
+      <input type="checkbox" value="cost">
+      Service Cost
+    </label><br>
+
+    <p>Write feedback for us to improve</p>
+    <textarea id="comment" placeholder="Provide feedback"></textarea><br>
+
+    <button id="submit">Submit</button>
+
+
+
+    </form>
+</div>
+  </body>
+
+
+
+
+
+</html>
+
+
+
