@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Computer Hardware Documentation</title>
+
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#navbar li {
+  border: 0.5px solid black;
+  list-style-type: none;
+  margin: 0;
+  padding: 2vh;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 2vh;
+  padding-bottom: 5vh;
+  border-bottom: 4px solid grey;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-color: #f1ffc2;
+  }
+
+  #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  border: 0.5px solid black;
+  overflow-y: auto;
+}
+
+#main-doc {
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 25vw;
+  height: 100vh;
+}
+}
+
+header {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+}
+
+    </style>
+
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      Computer Hardware Basics
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#CPU">CPU</a></li>
+      <li><a class="nav-link" href="#RAM">RAM</a></li>
+      <li><a class="nav-link" href="#GPU">GPU</a></li>
+      <li><a class="nav-link" href="#Motherboard">Motherboard</a></li>
+      <li><a class="nav-link" href="#Storage_(SSD,HDD)">Storage (SSD,HDD)</a></li>
+      <li><a class="nav-link" href="#PSU">PSU</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+
+    <section id="CPU" class="main-section">
+      <header>CPU</header>
+      <article>
+        <p>The CPU (Central Processing Unit) is often called the brain of the computer. It performs all the logical and arithmetic operations required to execute programs.</p>
+        <ul>
+          <li>Responsible for processing instructions from programs.</li>
+          <li>Measured by clock speed (GHz) and number of cores.</li>
+          <li>Two main brands: Intel and AMD.</li>
+        </ul>
+        <p>Modern CPUs contain multiple cores, allowing them to perform multiple tasks simultaneously for better performance and efficiency.</p>
+        <p>The performance of a CPU directly affects how fast applications and games run on your computer.</p>
+        <code>print("The CPU is the brain of your computer!")</code>
+      </article>
+    </section>
+
+    <section id="RAM" class="main-section">
+      <header>RAM</header>
+      <article>
+        <p>RAM (Random Access Memory) is the temporary storage used by the system to store data for active processes.</p>
+        <ul>
+          <li>Volatile memory – contents are lost when the system is powered off.</li>
+          <li>Measured in gigabytes (GB) and affects multitasking capability.</li>
+          <li>DDR4 and DDR5 are common modern types of RAM.</li>
+        </ul>
+        <p>More RAM allows smoother multitasking and faster performance in applications that require large amounts of data.</p>
+        <p>Insufficient RAM can cause your system to slow down or freeze during heavy workloads.</p>
+        <code>print("RAM helps your system run multiple programs efficiently!")</code>
+      </article>
+    </section>
+
+    <section id="GPU" class="main-section">
+      <header>GPU</header>
+      <article>
+        <p>The GPU (Graphics Processing Unit) handles rendering images, videos, and 3D graphics on your computer.</p>
+        <ul>
+          <li>Essential for gaming, video editing, and machine learning tasks.</li>
+          <li>Can be integrated (built into CPU) or dedicated (separate hardware).</li>
+          <li>Major manufacturers: NVIDIA, AMD, and Intel.</li>
+        </ul>
+        <p>Dedicated GPUs contain their own memory (VRAM) which improves graphics performance significantly.</p>
+        <p>GPUs are also widely used in AI and deep learning due to their high parallel processing capabilities.</p>
+        <code>print("GPUs bring visuals and AI computations to life!")</code>
+      </article>
+    </section>
+
+    <section id="Motherboard" class="main-section">
+      <header>Motherboard</header>
+      <article>
+        <p>The motherboard is the main circuit board that connects all computer components together.</p>
+        <ul>
+          <li>Contains sockets and slots for CPU, RAM, GPU, and storage devices.</li>
+          <li>Includes chipset, power connectors, and data buses.</li>
+          <li>Determines compatibility of components (like CPU socket type).</li>
+        </ul>
+        <p>It acts as the communication backbone, ensuring data flows smoothly between all components.</p>
+        <p>High-end motherboards offer better build quality, more expansion slots, and advanced connectivity options.</p>
+        <code>print("The motherboard connects all parts of your PC together!")</code>
+      </article>
+    </section>
+
+    <section id="Storage_(SSD,HDD)" class="main-section">
+      <header>Storage (SSD,HDD)</header>
+      <article>
+        <p>Storage devices hold your operating system, programs, and personal files.</p>
+        <ul>
+          <li>HDDs (Hard Disk Drives) use spinning disks to read/write data.</li>
+          <li>SSDs (Solid State Drives) use flash memory and are much faster.</li>
+          <li>NVMe SSDs offer the best performance via PCIe interface.</li>
+        </ul>
+        <p>Upgrading from an HDD to an SSD can drastically reduce boot and load times.</p>
+        <p>Storage capacity is measured in gigabytes (GB) or terabytes (TB), depending on user needs.</p>
+        <code>print("Fast storage makes your computer feel brand new!")</code>
+      </article>
+    </section>
+
+    <section id="PSU" class="main-section">
+      <header>PSU</header>
+      <article>
+        <p>The PSU (Power Supply Unit) provides power to all components of the computer.</p>
+        <ul>
+          <li>Converts AC power from the wall into DC power used by internal components.</li>
+          <li>Measured in watts (W); common ratings are 450W–850W.</li>
+          <li>Modular PSUs allow better cable management and airflow.</li>
+        </ul>
+        <p>A reliable PSU ensures stable performance and protects components from power surges.</p>
+        <p>Choosing an efficient PSU (80+ Bronze, Silver, Gold certified) reduces electricity wastage and heat.</p>
+        <code>print("A good PSU powers your PC safely and efficiently!")</code>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>
+
+
+
