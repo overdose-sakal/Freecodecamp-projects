@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+
+#header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  width: 10vw;
+  height: auto;
+  margin-right: 20vw;
+  display: block;
+}
+
+#nav-bar {
+    width: 60vw;
+    position: sticky;
+}
+
+#nav-bar li {
+  list-style: none;
+  padding: 0;
+  display: inline;
+  margin-right: 10%;
+}
+
+header a:link {
+  color: black;
+  text-decoration: none;
+}
+
+#video {
+  width: 70vw;
+  height: 60vh;
+  display: block;
+  margin: 0 auto;
+  padding-top: 4%;
+}
+
+@media (max-width: 720px) {
+  a {
+    font-size: 10px;
+  }
+
+  #video {
+    width: 90vw;
+    height: 40vh;
+  }
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.pogo {
+  width: 10vw;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
+
+#grid1,
+#grid2,
+#grid3 {
+  display: flex;
+}
+
+#logo1,
+#logo2,
+#logo3 {
+  display: inline;
+  margin-right: 4%;
+}
+
+#games {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+
+#g1,
+#g2,
+#g3 {
+  text-align: center;
+  margin-right: 15%;
+}
+
+#games {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  text-align: center;
+}
+
+#games div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.game-img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Riot_Games_wordmark.svg">
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#games">Games</a></li>
+          <li><a class="nav-link" href="#form">Contact</a></li>
+          <li><a class="nav-link" href="#video">Videos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+  <input type="submit" id="submit" 
+value="Submit" name="email">
+</form>
+
+<div id="grid1">
+  <div id="logo1">
+    <img class="pogo" src="https://cdn-icons-png.freepik.com/512/141/141295.png">
+  </div>
+  <div id="des1">
+    <h2>Play the Best of Riot Games</h2>
+    <p>Explore Riot’s universe of games and experience adrenaline-pumping action. From League of Legends to Valorant, every title is crafted with stunning graphics, immersive gameplay, and competitive excitement. Join millions of players worldwide and dive into epic battles, strategic challenges, and endless fun.</p>
+  </div>
+</div>
+
+<div id="grid2">
+  <div id="logo2">
+    <img class="pogo" src="https://cdn-icons-png.freepik.com/512/274/274805.png">
+  </div>
+  <div id="des2">
+    <h2>Get Started in Minutes</h2>
+    <p>Install Riot Games’ titles effortlessly and start playing immediately. Our lightweight launcher ensures fast downloads, automatic updates, and a hassle-free setup, so you can focus on what matters — gaming.</p>
+  </div>
+</div>
+
+<div id="grid3">
+  <div id="logo3">
+    <img class="pogo" src="https://cdn-icons-png.freepik.com/512/190/190411.png">
+  </div>
+  <div id="des3">
+    <h2>Show Your Riot Spirit</h2>
+    <p>Discover Riot Games merchandise and bring your favorite champions, agents, and in-game moments into the real world. From stylish apparel to collectibles, our merch collection is perfect for fans who want to express their passion.</p>
+  </div>
+</div>
+
+      <iframe id="video"
+  src="https://youtu.be/hhlgphVf-1g?si=HDQiBVjQowIpP4Lg" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+
+<section id="games">
+  <section id="games">
+  <div id="g1">
+    <img class="game-img" src="https://i.ytimg.com/vi/fmoe1vqDQaE/maxresdefault.jpg">
+    <div>Valorant</div>
+    <h2>Free</h2>
+  </div>
+
+  <div id="g2">
+    <img class="game-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnphhNqV0s9MG23Nnbpt7K0jueOCWI9z6vQ&s" >
+    <div>League of Legends</div>
+    <h2>Free</h2>
+  </div>
+
+  <div id="g3">
+    <img class="game-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5-_23szihPvg3f6Yw6PRrpo6CkDFKBxCBTQ&s" >
+    <div>Teamfight Tactics</div>
+    <h2>Free</h2>
+  </div>
+</section>
+
+</section>
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
